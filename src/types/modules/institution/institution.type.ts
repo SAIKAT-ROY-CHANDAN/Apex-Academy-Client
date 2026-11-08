@@ -1,0 +1,23 @@
+export type TInstitution = {
+  id: string;
+  mode: string;
+  address: string;
+  phone: string;
+  email: string;
+  name: string;
+  is_setup_completed: boolean;
+  weekend_days: string | string[];
+  logo: string | null;
+  login_background: string | null;
+  color_scheme: string;
+  active_modules: string | string[];
+  created_at: string;
+  updated_at: string;
+};
+
+export type TInstitutionResponse = {
+  success: boolean;
+  statusCode: number;
+  message: string;
+  data: TInstitution;
+};
